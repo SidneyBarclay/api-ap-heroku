@@ -5,7 +5,8 @@ var cors = require('cors');
 app.use(
     cors({
         credentials: true,
-        origin: 'https://www.portasecura.com'
+        origin: 'https://www.portasecura.com',
+        Access-Control-Allow-Origin: *
     })
 );
 app.options('*', cors());
